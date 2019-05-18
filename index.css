@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* altura del view port */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    color: white;
+    background-image: linear-gradient(rgb(87,150,163), rgb(46,62,143))
+}
+
+.location, .temperature{
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.temperature{
+    flex-direction: column;
+}
+
+.temperature:hover{
+    cursor: pointer;
+}
+
+.temperature-section{
+    display: flex;
+    align-items: center;
+}
+
+/* hago referencia al span de temperature */
+.temperature span{
+    margin: 10px;
+    font-size: 30px;
+}
+
+.temperature h2{
+    font-size: 40px;
+}
